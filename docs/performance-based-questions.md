@@ -42,56 +42,6 @@ On average across the exam, you have about one minute per question. Short recall
 6. **Look for a reset button** before experimenting, and note what the original state was.
 7. **Stop at your time limit,** make your best choices, and move on.
 
-## Practice task 1: complete the subnetting table
-
-For each host address, fill in the subnet mask, network ID, broadcast address, usable host range and number of usable hosts.
-
-| Host address | Mask | Network ID | Broadcast | Usable range | Usable hosts |
-|---|---|---|---|---|---|
-| 172.16.45.130/26 | ? | ? | ? | ? | ? |
-| 10.20.30.77/29 | ? | ? | ? | ? | ? |
-| 192.168.5.200/27 | ? | ? | ? | ? | ? |
-
-<details>
-<summary>Answer</summary>
-
-| Host address | Mask | Network ID | Broadcast | Usable range | Usable hosts |
-|---|---|---|---|---|---|
-| 172.16.45.130/26 | 255.255.255.192 | 172.16.45.128 | 172.16.45.191 | .129 to .190 | 62 |
-| 10.20.30.77/29 | 255.255.255.248 | 10.20.30.72 | 10.20.30.79 | .73 to .78 | 6 |
-| 192.168.5.200/27 | 255.255.255.224 | 192.168.5.192 | 192.168.5.223 | .193 to .222 | 30 |
-
-The method: find the block size in the last octet (256 minus the mask value: 64 for /26, 8 for /29, 32 for /27). The network ID is the largest multiple of the block size that is not above the host's value (128, 72, 192). The broadcast is the next block's start minus one. Usable hosts are 2 to the power of the host bits, minus 2 for the network ID and broadcast. See [Domain 1](domains/1-networking-concepts.md#key-concepts-explained).
-
-</details>
-
-## Practice task 2: order the troubleshooting steps
-
-Users on one floor report they cannot reach the file server. Put these actions in the order CompTIA's troubleshooting methodology uses:
-
-- Replace the faulty patch cable you suspect and see if the link comes up
-- Write up what you found, what you changed and what you learned
-- Ask the users when it started and check whether anything changed on that floor
-- Decide that a damaged patch cable to the floor's switch is the most likely cause
-- Confirm every user on the floor can reach the server, and label the cable run to prevent a repeat
-- Plan the cable swap for a quiet moment and note which users will briefly lose connection
-- Make the change: install the new cable permanently in the patch panel
-
-<details>
-<summary>Answer</summary>
-
-1. Ask the users when it started and check whether anything changed on that floor (identify the problem)
-2. Decide that a damaged patch cable to the floor's switch is the most likely cause (establish a theory of probable cause)
-3. Replace the faulty patch cable you suspect and see if the link comes up (test the theory to determine the cause)
-4. Plan the cable swap for a quiet moment and note which users will briefly lose connection (establish a plan of action and identify potential effects)
-5. Make the change: install the new cable permanently in the patch panel (implement the solution or escalate as necessary)
-6. Confirm every user on the floor can reach the server, and label the cable run to prevent a repeat (verify full system functionality and implement preventive measures)
-7. Write up what you found, what you changed and what you learned (document findings, actions, outcomes and lessons learned)
-
-The objectives say documentation happens throughout the process, but in an ordering task it goes last. If the test in step 3 had failed, the method sends you back to a new theory or to escalation. See [Domain 5](domains/5-network-troubleshooting.md#key-concepts-explained).
-
-</details>
-
 ## Practice under time
 
 PBQ skill improves fastest with timed practice. Work through the domain items in this repo, then take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) and check your pace against the plan above.
