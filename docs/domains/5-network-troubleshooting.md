@@ -281,32 +281,9 @@ The exam is one 90-minute block, so aim for about a minute per multiple-choice i
 
 ## Practice items
 
-These 12 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
+These 4 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
 
 ### Item 1
-
-A user reports she cannot print to the department printer. The technician has asked her questions, learned that the printer was moved to a new desk yesterday, and reproduced the problem from his own laptop. What should the technician do NEXT?
-
-A. Replace the printer's network cable
-
-B. Document the solution in the ticket system
-
-C. Establish a theory of probable cause, starting with the obvious
-
-D. Escalate to the network team
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** The technician has finished identifying the problem (questioned the user, found what changed, duplicated it). The next step is to establish a theory of probable cause. (Objective 5.1)
-
-- **A** is wrong because replacing the cable is a fix, which comes after a theory is tested and a plan is made.
-- **B** is wrong because there is no solution to document yet.
-- **D** is wrong because nothing has been tried that would justify escalation.
-
-</details>
-
-### Item 2
 
 A technician suspects a faulty patch cable and swaps it, but the workstation still has no connectivity. According to the troubleshooting methodology, what should the technician do now?
 
@@ -329,7 +306,7 @@ D. Identify potential effects of the original fix
 
 </details>
 
-### Item 3
+### Item 2
 
 Users on one floor report slow file transfers. The technician checks the uplink port twice, five minutes apart:
 
@@ -372,71 +349,7 @@ D. A damaged cable or a source of interference along the run
 
 </details>
 
-### Item 4
-
-Ten new PoE+ wireless access points are installed on a switch that already powers 30 IP phones. Six of the new APs work, but four never power on. The technician runs this command:
-
-```
-Switch#show power inline
-Module   Available     Used     Remaining
-          (Watts)     (Watts)    (Watts)
-------   ---------   --------   ---------
-1          370.0       366.0        4.0
-
-Interface Admin  Oper        Power   Device          Class  Max
-                             (Watts)
---------- ------ ----------- ------- --------------- -----  ----
-Gi1/0/37  auto   on          30.0    AIR-AP          4      30.0
-Gi1/0/38  auto   on          30.0    AIR-AP          4      30.0
-Gi1/0/39  auto   power-deny  0.0     n/a             4      30.0
-Gi1/0/40  auto   power-deny  0.0     n/a             4      30.0
-```
-
-What is the cause?
-
-A. The APs need 802.3bt and the switch only supports 802.3af
-
-B. The switch's total PoE power budget is exceeded
-
-C. The ports are administratively down
-
-D. The cables to the four APs are longer than 100 m
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** The switch has only 4 W of its 370 W budget left, and the ports show power-deny. The ports are enabled and the APs are detected, but there is no budget left to power them. (Objective 5.2)
-
-- **A** is wrong because six identical APs run at 30 W on this switch, so the standard is supported.
-- **C** is wrong because the Admin column shows auto, not disabled.
-- **D** is wrong because the switch detected the devices and their class; it is refusing power for lack of budget, not losing signal.
-
-</details>
-
-### Item 5
-
-A new fiber run between two buildings shows no link. Both switches have matching single-mode 10G optics, the cable is single-mode, and a visual fault locator shows light reaching the far end on both strands. Both switch ports are enabled and the optics show no fault, but neither side detects any received signal. What should the technician try FIRST?
-
-A. Replace both optics with multimode optics
-
-B. Install STP cable instead
-
-C. Swap the two fiber strands at one end
-
-D. Enable jumbo frames on both switches
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** The optics match and both strands are intact, so the likely fault is TX and RX transposed. Swapping the strands at one end connects each transmitter to the far receiver. (Objective 5.2)
-
-- **A** is wrong because single-mode optics match the single-mode cable; multimode optics would create a mismatch.
-- **B** is wrong because shielded copper does not apply to a fiber run between buildings.
-- **D** is wrong because jumbo frames change frame size and cannot bring up a link with no light received.
-
-</details>
-
-### Item 6
+### Item 3
 
 A user can print to a printer on the same subnet but cannot reach any internal websites on other subnets or the internet. The technician runs this:
 
@@ -472,55 +385,7 @@ D. Incorrect subnet mask
 
 </details>
 
-### Item 7
-
-Shortly after a contractor connects a cable between two ports on different access switches, the whole office network becomes almost unusable. Switch logs show the same MAC addresses moving rapidly between ports, and broadcast traffic is very high. What is the MOST likely cause?
-
-A. An ACL blocking broadcast traffic
-
-B. A switching loop because spanning tree is disabled or not working on those ports
-
-C. A wrong default route on the core router
-
-D. DHCP address pool exhaustion
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** A new redundant link plus MAC flapping and a broadcast storm is the signature of a Layer 2 loop. STP should have blocked one of the ports. (Objective 5.3)
-
-- **A** is wrong because an ACL blocking broadcasts would reduce broadcast traffic, not create a storm.
-- **C** is wrong because a routing problem would affect traffic between networks, not cause MAC flapping inside one.
-- **D** is wrong because pool exhaustion stops new clients getting addresses; it does not create broadcast storms.
-
-</details>
-
-### Item 8
-
-The guest Wi-Fi uses the scope 192.168.50.0/24 with addresses .10 to .250 and an 8-day lease. A conference center hosts several hundred different visitors each week, and by midweek new visitors get 169.254 addresses. Which two changes would BEST solve this? Choose two.
-
-A. Reduce the lease time to a few hours
-
-B. Enlarge the scope, for example by moving the guest network to a /22
-
-C. Add an exclusion range for .100 to .200
-
-D. Change the DNS server option to a public resolver
-
-E. Create a DHCP reservation for every visitor's device
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A and B.** The pool is exhausted by leases held by visitors who have left. Shorter leases return addresses quickly, and a larger scope gives more addresses. (Objective 5.3)
-
-- **C** is wrong because an exclusion removes 101 addresses from the pool, making exhaustion worse.
-- **D** is wrong because DNS settings do not help a client that cannot get an address at all.
-- **E** is wrong because reservations still use one address per device, and creating them for unknown visitors is impractical.
-
-</details>
-
-### Item 9
+### Item 4
 
 Users complain that VoIP calls to the head office break up, although web browsing feels fine. A technician pings the head office voice gateway:
 
@@ -563,85 +428,18 @@ D. Jitter
 
 </details>
 
-### Item 10
-
-A Wi-Fi analyzer in a small office shows the company's three 2.4 GHz access points on channels 1, 3 and 6, all with strong signals in the same area. Users report slow Wi-Fi. What should the technician do?
-
-A. Increase transmit power on all three APs
-
-B. Change every AP to channel 6
-
-C. Move the APs to channels 1, 6 and 11
-
-D. Enable MAC filtering
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** Channels 1 and 3, and 3 and 6, overlap and interfere. Channels 1, 6 and 11 are the non-overlapping set in the 2.4 GHz band in North America. (Objective 5.4)
-
-- **A** is wrong because more power makes the overlapping APs interfere with each other even more.
-- **B** is wrong because putting all APs on one channel makes them share and contend for the same airtime.
-- **D** is wrong because MAC filtering is an access control and does nothing for channel interference.
-
-</details>
-
-### Item 11
-
-A fiber patch cable between two racks has stopped passing traffic. The technician suspects a break or a sharp bend somewhere inside the cable jacket. Which tool will help find it MOST directly?
-
-A. Visual fault locator
-
-B. Toner and probe
-
-C. Cable tester for twisted pair
-
-D. Speed tester
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** A visual fault locator sends bright red light down the fiber, and the light escapes and glows at a break or tight bend. (Objective 5.5)
-
-- **B** is wrong because a toner traces copper cables by an electrical tone; it does not work on glass fiber.
-- **C** is wrong because a twisted pair tester checks copper pinouts.
-- **D** is wrong because a speed tester measures throughput, and there is no link to measure.
-
-</details>
-
-### Item 12
-
-A technician knows a rogue device's MAC address, 001a.2b3c.4d5e, from a DHCP log and wants to find which switch port it is plugged into. Which command on the access switch should she run?
-
-A. `show vlan`
-
-B. `show route`
-
-C. `show power`
-
-D. `show mac-address-table`
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** The MAC address table lists each learned MAC address with its VLAN and port. On Cisco IOS the command is `show mac address-table`, which can filter for one address. (Objective 5.5)
-
-- **A** is wrong because `show vlan` lists VLANs and their member ports but not MAC addresses.
-- **B** is wrong because the routing table holds networks and next hops, not MAC addresses.
-- **C** is wrong because `show power` shows PoE use, which only identifies powered devices and never by MAC.
-
-</details>
+Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 questions, with a domain-by-domain breakdown: [take the free test](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
 
 ## Score yourself
 
-| Item | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Answer | C | A | D | B | C | A | B | A, B | D | C | A | D |
-| Objective | 5.1 | 5.1 | 5.2 | 5.2 | 5.2 | 5.3 | 5.3 | 5.3 | 5.4 | 5.4 | 5.5 | 5.5 |
+| Item | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Answer | A | D | A | D |
+| Objective | 5.1 | 5.2 | 5.3 | 5.4 |
 
-- **11 to 12:** strong. Keep practicing with fresh command output so you read exhibits quickly under time pressure.
-- **9 to 10:** list the objectives you missed. Counter meanings and the methodology order are the usual gaps; reread [5.1 Troubleshooting methodology](#51-troubleshooting-methodology) and [5.2 Cabling and physical interface issues](#52-cabling-and-physical-interface-issues).
-- **8 or fewer:** this domain carries the most weight, so give it two study sessions. Write the seven steps from memory, rebuild the three symptom-to-cause tables without looking, then reread [5.3 Network service issues](#53-network-service-issues) and [5.5 Tools and protocols](#55-tools-and-protocols) and redo the items.
+- **4:** strong. Keep practicing with fresh command output so you read exhibits quickly under time pressure.
+- **3:** list the objectives you missed. Counter meanings and the methodology order are the usual gaps; reread [5.1 Troubleshooting methodology](#51-troubleshooting-methodology) and [5.2 Cabling and physical interface issues](#52-cabling-and-physical-interface-issues).
+- **2 or fewer:** this domain carries the most weight, so give it two study sessions. Write the seven steps from memory, rebuild the three symptom-to-cause tables without looking, then reread [5.3 Network service issues](#53-network-service-issues) and [5.5 Tools and protocols](#55-tools-and-protocols) and redo the items.
 
 ## Next step
 

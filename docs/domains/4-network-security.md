@@ -203,7 +203,7 @@ The exam is one 90-minute block, so aim for about a minute per multiple-choice i
 
 ## Practice items
 
-These 10 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
+These 4 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
 
 ### Item 1
 
@@ -229,75 +229,6 @@ D. SAML
 </details>
 
 ### Item 2
-
-A security review finds that the building's IP cameras run firmware with a published flaw that allows remote code execution. No attack has been seen. Which term describes the firmware flaw itself?
-
-A. Threat
-
-B. Exploit
-
-C. Risk
-
-D. Vulnerability
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** The flaw is a weakness, which is a vulnerability. (Objective 4.1)
-
-- **A** is wrong because a threat is the actor or event that could take advantage of the flaw.
-- **B** is wrong because an exploit is the code or technique used to attack the flaw.
-- **C** is wrong because risk combines the likelihood of exploitation with its impact; it is not the flaw itself.
-
-</details>
-
-### Item 3
-
-A food plant connects its programmable logic controllers and SCADA servers to the same flat network as office PCs. A consultant warns that office malware could stop production lines. What should the plant do?
-
-A. Place the SCADA and ICS devices in their own segment and allow only required traffic through a firewall
-
-B. Install a honeypot on the office network
-
-C. Move the SCADA servers into the screened subnet
-
-D. Enable MAC filtering on the office Wi-Fi
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** Operational technology should be segmented from IT networks, with strictly controlled traffic between them, so office threats cannot reach the control systems. (Objective 4.1)
-
-- **B** is wrong because a honeypot detects attackers; it does not separate the plant systems.
-- **C** is wrong because the screened subnet is for public-facing services; it would expose control systems more, not less.
-- **D** is wrong because MAC filtering on Wi-Fi does nothing to separate wired control systems from office PCs.
-
-</details>
-
-### Item 4
-
-A European online retailer is told by its legal team that customer records must be stored only in data centers inside the EU. Which concept does this requirement describe?
-
-A. Geofencing
-
-B. Least privilege
-
-C. Data locality
-
-D. PCI DSS segmentation
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** Data locality requires data to be stored and processed within a specific country or region. (Objective 4.1)
-
-- **A** is wrong because geofencing controls access or actions based on a device's location, not where data is stored.
-- **B** is wrong because least privilege limits account permissions.
-- **D** is wrong because PCI DSS is about protecting payment card data, and segmentation is about separating networks.
-
-</details>
-
-### Item 5
 
 Users on one subnet report slow and odd web sessions. A technician runs this on an affected PC, where 10.0.4.1 is the default gateway:
 
@@ -333,7 +264,7 @@ D. VLAN hopping
 
 </details>
 
-### Item 6
+### Item 3
 
 A penetration tester shows that she can send double-tagged frames from an access port and reach the server VLAN. Which two changes would BEST stop this kind of attack? Choose two.
 
@@ -358,53 +289,7 @@ E. Add a PTR record for each server
 
 </details>
 
-### Item 7
-
-Visitors at a hotel conference see two networks named "ConfCenter-WiFi". Several attendees connect to the stronger one, which shows a page asking for their work email password before granting access. The hotel's IT staff say they run only one such network. What is this?
-
-A. Rogue DHCP server
-
-B. Tailgating
-
-C. MAC flooding
-
-D. Evil twin
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** An evil twin copies a legitimate SSID, often with a stronger signal, to lure users and harvest credentials or intercept traffic. (Objective 4.2)
-
-- **A** is wrong because a rogue DHCP server hands out bad addressing; it does not create a lookalike SSID.
-- **B** is wrong because tailgating is physically following someone through a secured door.
-- **C** is wrong because MAC flooding attacks a switch's MAC table.
-
-</details>
-
-### Item 8
-
-A switch in a shared office suddenly starts sending unicast traffic out every port. Its MAC address table shows thousands of entries learned on port Gi0/12 within a few seconds. Which control would BEST prevent this?
-
-A. A screened subnet
-
-B. Content filtering
-
-C. Port security limiting MAC addresses on each access port
-
-D. DNSSEC
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** This is MAC flooding. Port security caps how many MAC addresses a port may learn, and acts when the limit is exceeded. (Objective 4.3)
-
-- **A** is wrong because a screened subnet separates public servers; it does not protect a switch's MAC table.
-- **B** is wrong because content filtering inspects web content.
-- **D** is wrong because DNSSEC protects DNS answers, not switching.
-
-</details>
-
-### Item 9
+### Item 4
 
 A company is launching a public web store. The web server must be reachable from the internet, but if it is ever compromised the attacker must not be able to reach the internal file and database servers directly. Where should the web server go?
 
@@ -427,39 +312,18 @@ D. On the same VLAN as the database server for speed
 
 </details>
 
-### Item 10
-
-A technician unboxes a new managed switch for a branch office. Following the company's hardening checklist, which should be done BEFORE the switch is connected to the production network?
-
-A. Enable every port so users can plug in anywhere
-
-B. Change the default administrator credentials
-
-C. Turn on Telnet so the help desk can reach it
-
-D. Configure URL filtering on the switch
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** Default credentials are published and widely known, so they must be changed before the device is reachable from the network. (Objective 4.3)
-
-- **A** is wrong because unused ports should be disabled, not enabled.
-- **C** is wrong because Telnet sends credentials in plaintext; management should use SSH.
-- **D** is wrong because URL filtering is a proxy or firewall function, not a switch hardening step.
-
-</details>
+Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 questions, with a domain-by-domain breakdown: [take the free test](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
 
 ## Score yourself
 
-| Item | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Answer | B | D | A | C | B | A, D | D | C | A | B |
-| Objective | 4.1 | 4.1 | 4.1 | 4.1 | 4.2 | 4.2 | 4.2 | 4.3 | 4.3 | 4.3 |
+| Item | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Answer | B | B | A, D | A |
+| Objective | 4.1 | 4.2 | 4.2 | 4.3 |
 
-- **9 to 10:** strong. Keep the attack and defense pairs in a flashcard deck and review them weekly.
-- **7 to 8:** list the objectives you missed. Layer 2 attacks and the RADIUS versus TACACS+ split are the usual gaps; reread [4.2 Attacks and their impact](#42-attacks-and-their-impact) and the IAM table in [4.1 Basic network security concepts](#41-basic-network-security-concepts).
-- **6 or fewer:** spend a study session here. Write the "Matching attacks to defenses" table from memory, then reread [4.3 Network security features, defenses and solutions](#43-network-security-features-defenses-and-solutions) and redo the items.
+- **4:** strong. Keep the attack and defense pairs in a flashcard deck and review them weekly.
+- **3:** list the objectives you missed. Layer 2 attacks and the RADIUS versus TACACS+ split are the usual gaps; reread [4.2 Attacks and their impact](#42-attacks-and-their-impact) and the IAM table in [4.1 Basic network security concepts](#41-basic-network-security-concepts).
+- **2 or fewer:** spend a study session here. Write the "Matching attacks to defenses" table from memory, then reread [4.3 Network security features, defenses and solutions](#43-network-security-features-defenses-and-solutions) and redo the items.
 
 ## Next step
 

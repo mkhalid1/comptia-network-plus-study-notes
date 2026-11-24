@@ -239,32 +239,9 @@ The exam is one 90-minute block, so plan on about a minute per multiple-choice i
 
 ## Practice items
 
-These 10 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
+These 4 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
 
 ### Item 1
-
-A technician is sent to a colocation facility to replace a failed firewall. She needs to know which rack the firewall is in and its exact position in that rack. Which document should she check?
-
-A. Layer 3 network diagram
-
-B. IPAM report
-
-C. Rack diagram
-
-D. Logical diagram
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** A rack diagram shows each device's position by rack unit, which is exactly what she needs on site. (Objective 3.1)
-
-- **A** is wrong because a Layer 3 diagram shows subnets and routing, not physical placement.
-- **B** is wrong because IPAM tracks addresses, not where hardware sits.
-- **D** is wrong because a logical diagram shows traffic flow and ignores physical location.
-
-</details>
-
-### Item 2
 
 A network engineer wants to change the native VLAN on the trunk between two core switches to close a security finding. The change is planned but not yet made. What should the engineer do FIRST?
 
@@ -287,7 +264,7 @@ D. Copy the new configuration to the golden configuration
 
 </details>
 
-### Item 3
+### Item 2
 
 An auditor reports that the monitoring server polls routers with a community string that can be read off the wire. The team must keep SNMP but needs each poll authenticated and encrypted. What should they configure?
 
@@ -310,30 +287,7 @@ D. SNMPv3 with the authPriv security level
 
 </details>
 
-### Item 4
-
-A security analyst wants an intrusion detection sensor to see every frame entering and leaving the switch port that connects the internet router. The sensor plugs into a spare port on the same switch. What should be configured on the switch?
-
-A. An SNMP trap destination
-
-B. Port mirroring from the router port to the sensor port
-
-C. A DHCP reservation for the sensor
-
-D. Scheduled network discovery
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** Port mirroring copies the traffic from the router's port to the sensor's port, so the sensor sees everything without being inline. (Objective 3.2)
-
-- **A** is wrong because traps are event alerts, not copies of traffic.
-- **C** is wrong because a reservation only fixes the sensor's address.
-- **D** is wrong because discovery finds devices; it does not deliver traffic to a sensor.
-
-</details>
-
-### Item 5
+### Item 3
 
 The finance team says the ordering database can lose no more than 15 minutes of transactions in a disaster. Nightly backups are taken at 01:00. Which DR metric is the current design failing to meet?
 
@@ -356,30 +310,7 @@ D. MTTR
 
 </details>
 
-### Item 6
-
-A company's recovery site already has servers, power and network links installed and ready, but holds no current data: the latest backups are restored onto it only when the site is activated, which takes several hours. Which type of site is this?
-
-A. Cold site
-
-B. Hot site
-
-C. Warm site
-
-D. Active-active site
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** A warm site has hardware and connectivity ready but needs current data loaded, giving recovery in hours to days. (Objective 3.3)
-
-- **A** is wrong because a cold site has no installed equipment.
-- **B** is wrong because a hot site already holds current, replicated data.
-- **D** is wrong because active-active means both locations carry live traffic, so nothing needs restoring.
-
-</details>
-
-### Item 7
+### Item 4
 
 A new VLAN 40 is created for a training room. The router has an interface in VLAN 40 and a DHCP scope for that subnet exists on the server at 10.0.1.10, which sits in the server VLAN. Training room PCs get addresses in 169.254.0.0/16. What is the MOST likely fix?
 
@@ -402,99 +333,18 @@ D. Add a PTR record for 10.0.1.10
 
 </details>
 
-### Item 8
-
-A help desk technician runs this command from a workstation:
-
-```
-C:\>nslookup intranet.example.com
-Server:  dc1.corp.example.com
-Address:  10.0.0.53
-
-Non-authoritative answer:
-Name:    intranet.example.com
-Address:  203.0.113.40
-```
-
-What does "Non-authoritative answer" tell the technician?
-
-A. The record is forged and DNSSEC validation failed
-
-B. The name does not exist in DNS
-
-C. The workstation used its hosts file instead of DNS
-
-D. The answer came from the resolver's cache, not from a server that holds the zone
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** A non-authoritative answer is one the resolver (dc1) had cached from an earlier lookup, rather than one served by an authoritative server for the zone. It is normal. (Objective 3.4)
-
-- **A** is wrong because a failed DNSSEC check gives an error, not a normal answer.
-- **B** is wrong because an address was returned.
-- **C** is wrong because nslookup queries DNS directly and does not read the hosts file.
-
-</details>
-
-### Item 9
-
-A company is moving its email to a new provider. It needs inbound mail delivered to the provider's servers, and the provider's spam checks require a reverse lookup of the company's outbound mail relay to return its name. Which two record types are needed? Choose two.
-
-A. CNAME
-
-B. MX
-
-C. AAAA
-
-D. NS
-
-E. PTR
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B and E.** MX records tell other servers where to deliver mail for the domain. A PTR record in the reverse zone maps the relay's IP address back to its name. (Objective 3.4)
-
-- **A** is wrong because a CNAME creates an alias; MX records must not point to a CNAME, and it does not do reverse lookups.
-- **C** is wrong because AAAA maps a name to an IPv6 address, a forward lookup.
-- **D** is wrong because NS records name the zone's DNS servers, not its mail servers.
-
-</details>
-
-### Item 10
-
-A remote branch's only WAN link fails, and engineers at head office lose all access to the branch router. They want to make sure they can still reach the router's command line the next time this happens. What should they add?
-
-A. A console server at the branch with its own cellular connection
-
-B. A clientless VPN portal at head office
-
-C. A jump box at head office
-
-D. SSH access on the router's LAN interface
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** Out-of-band management uses a separate path. A console server with cellular access reaches the router's console port even when the WAN is down. (Objective 3.5)
-
-- **B** is wrong because a VPN portal still depends on reaching the branch over the failed link.
-- **C** is wrong because a jump box controls how admins connect, but it still uses the same in-band path.
-- **D** is wrong because SSH over the LAN interface is in-band and unreachable from head office during the outage.
-
-</details>
+Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 questions, with a domain-by-domain breakdown: [take the free test](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
 
 ## Score yourself
 
-| Item | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Answer | C | A | D | B | A | C | B | D | B, E | A |
-| Objective | 3.1 | 3.1 | 3.2 | 3.2 | 3.3 | 3.3 | 3.4 | 3.4 | 3.4 | 3.5 |
+| Item | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Answer | A | D | A | B |
+| Objective | 3.1 | 3.2 | 3.3 | 3.4 |
 
-- **9 to 10:** strong. Keep the port numbers and record types fresh with short daily recall.
-- **7 to 8:** list the objectives you missed. SNMP versions, DHCP relay and DNS records are the usual gaps; reread [3.2 Network monitoring technologies](#32-network-monitoring-technologies) and [3.4 IPv4 and IPv6 network services](#34-ipv4-and-ipv6-network-services).
-- **6 or fewer:** spend a study session here. Write the RPO, RTO, MTTR and MTBF definitions from memory, draw the three DR sites with their recovery speeds, and redo the items after rereading [Key concepts](#key-concepts-explained).
+- **4:** strong. Keep the port numbers and record types fresh with short daily recall.
+- **3:** list the objectives you missed. SNMP versions, DHCP relay and DNS records are the usual gaps; reread [3.2 Network monitoring technologies](#32-network-monitoring-technologies) and [3.4 IPv4 and IPv6 network services](#34-ipv4-and-ipv6-network-services).
+- **2 or fewer:** spend a study session here. Write the RPO, RTO, MTTR and MTBF definitions from memory, draw the three DR sites with their recovery speeds, and redo the items after rereading [Key concepts](#key-concepts-explained).
 
 ## Next step
 

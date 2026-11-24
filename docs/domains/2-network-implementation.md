@@ -222,7 +222,7 @@ Routing table and interface output items take longer than recall items: give the
 
 ## Practice items
 
-These 10 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
+These 4 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
 
 ### Item 1
 
@@ -257,75 +257,6 @@ D. 10.0.0.10
 
 ### Item 2
 
-A router learns 172.18.4.0/24 from both OSPF and EIGRP (internal), with default settings. Which route goes into the routing table?
-
-A. The EIGRP route, because its administrative distance is lower
-
-B. The OSPF route, because link-state protocols are always preferred
-
-C. Both, load balanced equally, because the prefixes match
-
-D. The OSPF route, because its metric number is smaller
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** With the same prefix length, the router compares administrative distance. Internal EIGRP is 90 and OSPF is 110, so EIGRP wins. (Objective 2.1)
-
-- **B** is wrong because there is no rule preferring link-state protocols; administrative distance decides.
-- **C** is wrong because routers do not load balance across different protocols for one prefix by default.
-- **D** is wrong because metrics from different protocols are not comparable; metric only breaks ties within one protocol.
-
-</details>
-
-### Item 3
-
-A branch has two routers connected to the user VLAN. Users must keep working if either router fails, without anyone changing the default gateway on their PCs. What should the administrator configure?
-
-A. PAT on both routers
-
-B. Subinterfaces on one router
-
-C. BGP between the two routers
-
-D. An FHRP such as VRRP, with hosts using the virtual IP as their gateway
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** A first hop redundancy protocol lets the routers share a virtual IP. If the active router fails, the standby takes over the VIP and hosts keep the same gateway. (Objective 2.1)
-
-- **A** is wrong because PAT translates addresses; it gives no gateway failover.
-- **B** is wrong because subinterfaces on one router still leave that router as a single point of failure.
-- **C** is wrong because BGP exchanges routes between autonomous systems; it does not give hosts a redundant gateway address.
-
-</details>
-
-### Item 4
-
-An office is installing IP phones. Each desk has one network jack. The PC will plug into the phone, and the phone into the jack. Voice must be prioritized and kept separate from data. What should the switch port be configured with?
-
-A. A trunk carrying all VLANs with VLAN 1 as native
-
-B. An access VLAN for data and a voice VLAN for the phone
-
-C. Jumbo frames and half duplex
-
-D. Link aggregation with a second port
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** The voice VLAN feature lets the phone tag its traffic into a separate VLAN while the PC's traffic stays untagged on the data VLAN, on one port. (Objective 2.2)
-
-- **A** is wrong because carrying every VLAN to a desk port is unnecessary and insecure.
-- **C** is wrong because neither setting separates or prioritizes voice, and half duplex would slow the port.
-- **D** is wrong because there is only one jack, and aggregation adds bandwidth, not voice separation.
-
-</details>
-
-### Item 5
-
 Users on a file server complain that transfers are slow. The cable tested good. The switch port facing the server shows:
 
 ```
@@ -357,7 +288,7 @@ D. Set both the NIC and the switch port to matching settings, ideally auto-negot
 
 </details>
 
-### Item 6
+### Item 3
 
 A small warehouse has three APs on 2.4 GHz using 20 MHz channels, and their coverage areas overlap. Which channel plan avoids co-channel and adjacent-channel interference in North America?
 
@@ -380,55 +311,7 @@ D. 3, 7 and 9
 
 </details>
 
-### Item 7
-
-A hotel wants Wi-Fi for visitors that shows a terms-of-use page, gives internet access only, and keeps guests away from the hotel's booking systems. Which two settings meet these goals? Choose two.
-
-A. Put guests on the staff SSID with a shared passphrase printed at reception
-
-B. A captive portal that guests must accept before access
-
-C. WEP encryption for compatibility with older devices
-
-D. Disable client isolation so guests can share files
-
-E. A separate guest SSID mapped to an isolated VLAN with internet-only access
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B and E.** The captive portal presents the terms page. A separate SSID on an isolated VLAN with internet-only rules keeps guests off internal systems. (Objective 2.3)
-
-- **A** is wrong because the staff network would put guests next to the booking systems.
-- **C** is wrong because WEP is broken and has no place in a new deployment.
-- **D** is wrong because guests should not reach each other, so client isolation should stay on.
-
-</details>
-
-### Item 8
-
-A company needs a wireless link between two buildings 400 m apart with clear line of sight. Running fiber is not allowed. Which antenna choice fits BEST?
-
-A. Omnidirectional antennas on both roofs
-
-B. Higher transmit power on the indoor ceiling APs
-
-C. Directional antennas on each building, aimed at each other
-
-D. Band steering on the existing APs
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** A point to point link needs directional antennas (such as Yagi or dish) that focus the signal toward the other end, giving range and less interference. (Objective 2.3)
-
-- **A** is wrong because omnidirectional antennas spread energy in all directions, wasting it and picking up more interference.
-- **B** is wrong because indoor APs are not designed or aimed for a 400 m outdoor link, and more power also raises interference.
-- **D** is wrong because band steering moves clients between bands; it does not extend range.
-
-</details>
-
-### Item 9
+### Item 4
 
 A data center uses hot and cold aisles, with server fronts facing the cold aisle. New top-of-rack switches are mounted so their ports face the rear, toward the servers' network ports and the hot aisle. The switches start logging high temperature alarms. What is the MOST likely cause and fix?
 
@@ -451,39 +334,18 @@ D. The rack is not lockable; replace it with a lockable cabinet
 
 </details>
 
-### Item 10
-
-A technician must add a new switch to a rack that already holds several servers on a metered PDU fed by one circuit. What should the technician check FIRST?
-
-A. Whether the total power load with the new switch stays within the PDU and circuit ratings
-
-B. Whether the switch supports jumbo frames
-
-C. Which VLANs the switch will trunk
-
-D. Whether the server room uses a clean agent fire suppression system
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** Before plugging anything in, confirm the added draw will not overload the PDU or circuit. An overload trips the breaker and takes down every device in the rack. (Objective 2.4)
-
-- **B** is wrong because jumbo frame support is a configuration detail that can be checked later.
-- **C** is wrong because VLAN planning comes after the switch is safely installed and powered.
-- **D** is wrong because fire suppression is a room design factor that does not change with one switch.
-
-</details>
+Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 questions, with a domain-by-domain breakdown: [take the free test](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
 
 ## Score yourself
 
-| Item | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 |
-|---|---|---|---|---|---|---|---|---|---|---|
-| Answer | C | A | D | B | D | A | B, E | C | B | A |
-| Objective | 2.1 | 2.1 | 2.1 | 2.2 | 2.2 | 2.3 | 2.3 | 2.3 | 2.4 | 2.4 |
+| Item | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Answer | C | D | A | B |
+| Objective | 2.1 | 2.2 | 2.3 | 2.4 |
 
-- **9 to 10:** strong. Keep the route selection order and the wireless tables fresh with mixed practice.
-- **7 to 8:** list the objectives you missed. Route selection and switch port problems are the usual weak spots; reread [2.1 Routing technologies](#21-routing-technologies) and [2.2 Switching technologies](#22-switching-technologies).
-- **6 or fewer:** spend two study sessions here. Write the route selection order and the administrative distance table from memory, draw a trunk with native and voice VLANs on paper, then reread [2.3 Wireless devices and technologies](#23-wireless-devices-and-technologies) and [2.4 Physical installations](#24-physical-installations) before redoing the items.
+- **4:** strong. Keep the route selection order and the wireless tables fresh with mixed practice.
+- **3:** list the objectives you missed. Route selection and switch port problems are the usual weak spots; reread [2.1 Routing technologies](#21-routing-technologies) and [2.2 Switching technologies](#22-switching-technologies).
+- **2 or fewer:** spend two study sessions here. Write the route selection order and the administrative distance table from memory, draw a trunk with native and voice VLANs on paper, then reread [2.3 Wireless devices and technologies](#23-wireless-devices-and-technologies) and [2.4 Physical installations](#24-physical-installations) before redoing the items.
 
 ## Next step
 

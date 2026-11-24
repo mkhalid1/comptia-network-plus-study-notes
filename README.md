@@ -1,12 +1,12 @@
 # CompTIA Network+ N10-009 Study Notes
 
-A free, complete study guide for the CompTIA Network+ N10-009 exam. For each of the five official domains you get a plain-English explanation of every objective, the tables you need cold (OSI layers, ports and protocols, cabling, Wi-Fi standards, troubleshooting tools), subnetting worked step by step, how the questions look, a method, the traps that cost points, and original practice items with full explanations: 54 across the domains, plus a 15-item diagnostic and two performance-based practice tasks. Every exam fact comes from CompTIA's own pages and the official objectives document, each one [cited](docs/sources.md).
+A free, complete study guide for the CompTIA Network+ N10-009 exam. For each of the five official domains you get a plain-English explanation of every objective, the tables you need cold (OSI layers, ports and protocols, cabling, Wi-Fi standards, troubleshooting tools), subnetting worked step by step, how the questions look, a method, the traps that cost points, and original practice items with full explanations: 20 across the domains, plus a 5-item diagnostic and two performance-based practice tasks. Every exam fact comes from CompTIA's own pages and the official objectives document, each one [cited](docs/sources.md).
 
-Want to see where you stand first? Take the [free timed Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), or the shorter [15-minute diagnostic](docs/diagnostic.md) in this repo.
+Want to see where you stand first? Take the [free timed Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), or the shorter [5-minute diagnostic](docs/diagnostic.md) in this repo.
 
 ## Start here
 
-1. **Find your weak domains.** Take the [15-minute diagnostic](docs/diagnostic.md): three items from each domain, with a results table that tells you where to start.
+1. **Find your weak domains.** Take the [5-minute diagnostic](docs/diagnostic.md): one item from each domain, with a results table that tells you where to start.
 2. **Fix the weakest heavy domain first.** Open its guide below, read "Key concepts" and "Traps that cost points", then do its practice items. Troubleshooting (24%) and Networking Concepts (23%) together are almost half the exam.
 3. **Follow a plan.** Use the [7-day plan](docs/study-plans.md#7-day-plan), or the [2-day plan](docs/study-plans.md#2-day-plan) if your exam is close.
 
@@ -31,11 +31,11 @@ Sources: [CompTIA Network+](https://www.comptia.org/en-us/certifications/network
 
 | Domain | Weight | What it covers | Items | Guide |
 |---|---|---|---|---|
-| 1. Networking Concepts | 23% | OSI model, appliances, cloud, ports and protocols, media and transceivers, topologies, IPv4 addressing and subnetting, modern environments | 12 | [Domain 1](docs/domains/1-networking-concepts.md) |
-| 2. Network Implementation | 20% | Routing, switching and VLANs, wireless, physical installations | 10 | [Domain 2](docs/domains/2-network-implementation.md) |
-| 3. Network Operations | 19% | Documentation and processes, monitoring, disaster recovery, IPv4 and IPv6 services, access and management | 10 | [Domain 3](docs/domains/3-network-operations.md) |
-| 4. Network Security | 14% | Security concepts, attacks, defenses and hardening | 10 | [Domain 4](docs/domains/4-network-security.md) |
-| 5. Network Troubleshooting | 24% | The troubleshooting method, cabling, services, performance, tools and commands | 12 | [Domain 5](docs/domains/5-network-troubleshooting.md) |
+| 1. Networking Concepts | 23% | OSI model, appliances, cloud, ports and protocols, media and transceivers, topologies, IPv4 addressing and subnetting, modern environments | 4 | [Domain 1](docs/domains/1-networking-concepts.md) |
+| 2. Network Implementation | 20% | Routing, switching and VLANs, wireless, physical installations | 4 | [Domain 2](docs/domains/2-network-implementation.md) |
+| 3. Network Operations | 19% | Documentation and processes, monitoring, disaster recovery, IPv4 and IPv6 services, access and management | 4 | [Domain 3](docs/domains/3-network-operations.md) |
+| 4. Network Security | 14% | Security concepts, attacks, defenses and hardening | 4 | [Domain 4](docs/domains/4-network-security.md) |
+| 5. Network Troubleshooting | 24% | The troubleshooting method, cabling, services, performance, tools and commands | 4 | [Domain 5](docs/domains/5-network-troubleshooting.md) |
 
 Every domain guide has the same parts: what the domain measures (objective by objective), key concepts explained, how the questions look, a method, the traps that cost points, timing, original practice items with explanations, and a score table.
 
@@ -55,7 +55,7 @@ Every domain guide has the same parts: what the domain measures (objective by ob
   - [Booking and taking the exam](docs/exam-overview.md#booking-and-taking-the-exam)
   - [Retakes and renewal](docs/exam-overview.md#retakes-and-renewal)
   - [Practice the real format](docs/exam-overview.md#practice-the-real-format)
-- [15-minute diagnostic](docs/diagnostic.md)
+- [5-minute diagnostic](docs/diagnostic.md)
   - [Part A: Domain 1, Networking Concepts](docs/diagnostic.md#part-a-domain-1-networking-concepts)
   - [Part B: Domain 2, Network Implementation](docs/diagnostic.md#part-b-domain-2-network-implementation)
   - [Part C: Domain 3, Network Operations](docs/diagnostic.md#part-c-domain-3-network-operations)

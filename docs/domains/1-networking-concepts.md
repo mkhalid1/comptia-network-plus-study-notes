@@ -1,4 +1,4 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [15-minute diagnostic](../diagnostic.md) · Next: [Domain 2: Network Implementation](2-network-implementation.md)<!-- /nav:top -->
+<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [5-minute diagnostic](../diagnostic.md) · Next: [Domain 2: Network Implementation](2-network-implementation.md)<!-- /nav:top -->
 
 # Domain 1: Networking Concepts
 
@@ -386,55 +386,9 @@ Recall items in this domain should take well under a minute, which buys time for
 
 ## Practice items
 
-These 12 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
+These 4 items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider.
 
 ### Item 1
-
-A web browser sends a request. Which order shows the PDU names as the data moves down the OSI stack on the sending host, from layer 7 to layer 1?
-
-A. Bits, frame, packet, segment, data
-
-B. Data, segment, packet, frame, bits
-
-C. Data, packet, segment, frame, bits
-
-D. Data, frame, packet, segment, bits
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** Application data is split into segments at layer 4, placed in packets at layer 3, framed at layer 2 and sent as bits at layer 1. (Objective 1.1)
-
-- **A** is wrong because it is the receiving order, from the wire upward.
-- **C** is wrong because it puts the packet (layer 3) above the segment (layer 4).
-- **D** is wrong because the frame is a layer 2 unit and cannot come before the segment and packet.
-
-</details>
-
-### Item 2
-
-An online store runs six identical web servers. It wants customers to reach one public address, have their requests spread across the servers, and stop sending traffic to any server that fails a health check. Which appliance should it deploy?
-
-A. Forward proxy
-
-B. IDS
-
-C. NAS
-
-D. Load balancer
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** A load balancer presents one address, distributes requests across a pool and removes unhealthy members using health checks. (Objective 1.2)
-
-- **A** is wrong because a forward proxy makes outbound requests for internal clients; it does not spread inbound traffic across servers.
-- **B** is wrong because an IDS only watches and alerts.
-- **C** is wrong because a NAS serves files on the LAN.
-
-</details>
-
-### Item 3
 
 Database servers in a cloud VPC sit in a private subnet. They must download security patches from the internet, but nothing on the internet should be able to start a connection to them. What should the administrator add?
 
@@ -457,40 +411,7 @@ D. A Direct Connect link to the patch vendor
 
 </details>
 
-### Item 4
-
-A technician reviews connections on a server that should only accept encrypted management and web traffic.
-
-```
-Proto  Local Address      Foreign Address      State
-TCP    10.0.4.20:22       10.0.9.15:51022      ESTABLISHED
-TCP    10.0.4.20:443      203.0.113.44:60311   ESTABLISHED
-TCP    10.0.4.20:23       10.0.9.88:49870      ESTABLISHED
-TCP    10.0.4.20:636      10.0.2.10:52200      ESTABLISHED
-```
-
-Which service breaks the policy?
-
-A. The service on port 22
-
-B. The service on port 443
-
-C. The service on port 23
-
-D. The service on port 636
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: C.** Port 23 is Telnet, which sends everything, including passwords, in clear text. It should be disabled and replaced with SSH. (Objective 1.4)
-
-- **A** is wrong because port 22 is SSH, which is encrypted.
-- **B** is wrong because port 443 is HTTPS, which uses TLS.
-- **D** is wrong because port 636 is LDAPS, which is LDAP over TLS.
-
-</details>
-
-### Item 5
+### Item 2
 
 A firewall team is writing rules for a monitoring network. Which two protocols use UDP as their standard transport? Choose two.
 
@@ -518,7 +439,7 @@ F. LDAPS
 
 </details>
 
-### Item 6
+### Item 3
 
 Two campus buildings are 8 km apart. The company needs a 10 Gbps fiber link between their core switches, which have SFP+ ports. Which choice fits?
 
@@ -541,76 +462,7 @@ D. Twinax DAC cable
 
 </details>
 
-### Item 7
-
-A data center hosts a microservices application where most traffic flows between servers rather than to users. The architect wants every server to be the same number of hops from every other server, and to add capacity by adding switches. Which design fits BEST?
-
-A. Collapsed core
-
-B. Spine and leaf
-
-C. Hub and spoke
-
-D. Point to point
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** In spine and leaf, every leaf connects to every spine, so any server reaches any other in the same number of hops. It suits heavy east-west traffic and scales by adding leaves or spines. (Objective 1.6)
-
-- **A** is wrong because a collapsed core merges core and distribution for smaller sites; it does not give uniform server-to-server paths at scale.
-- **C** is wrong because hub and spoke sends spoke-to-spoke traffic through the hub, a bottleneck for east-west traffic.
-- **D** is wrong because point to point joins only two endpoints.
-
-</details>
-
-### Item 8
-
-A host is configured with 172.16.45.130/26. What is the broadcast address of its subnet?
-
-A. 172.16.45.127
-
-B. 172.16.45.255
-
-C. 172.16.45.159
-
-D. 172.16.45.191
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** /26 gives a mask of 255.255.255.192 and a block size of 64. The subnets start at .0, .64, .128 and .192, so .130 is in 172.16.45.128. The broadcast is one below the next network: 172.16.45.191. (Objective 1.7)
-
-- **A** is wrong because .127 is the broadcast of the previous subnet, 172.16.45.64/26.
-- **B** is wrong because .255 would be the broadcast for a /24.
-- **C** is wrong because .159 would be the broadcast for a /27 starting at .128.
-
-</details>
-
-### Item 9
-
-A network administrator needs to create a subnet for a new floor with 50 hosts. To conserve address space, which prefix is the smallest that fits?
-
-A. /26
-
-B. /27
-
-C. /25
-
-D. /28
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: A.** A /26 has 6 host bits: 64 addresses and 62 usable hosts, enough for 50. (Objective 1.7)
-
-- **B** is wrong because a /27 gives only 30 usable hosts.
-- **C** is wrong because a /25 (126 hosts) fits but wastes more addresses than needed.
-- **D** is wrong because a /28 gives only 14 usable hosts.
-
-</details>
-
-### Item 10
+### Item 4
 
 A server has the address 10.10.8.200/21. Which of these hosts is in the same subnet, so the two can communicate without a router?
 
@@ -633,62 +485,18 @@ D. 10.10.0.200/21
 
 </details>
 
-### Item 11
-
-An engineering team manages 300 branch routers with templates stored in a Git repository. An audit finds that 40 routers have settings that no longer match the approved template after manual changes during outages. What is this problem called, and how does infrastructure as code help?
-
-A. Address exhaustion; IaC assigns new addresses
-
-B. Configuration drift; IaC compares devices with the template and reapplies it to restore compliance
-
-C. A branching conflict; IaC deletes the repository branch
-
-D. Zero-touch provisioning; IaC ships new routers to each branch
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: B.** Devices moving away from the approved configuration is configuration drift. IaC tooling detects the difference and pushes the template again. (Objective 1.8)
-
-- **A** is wrong because address exhaustion is about running out of IP addresses.
-- **C** is wrong because branching conflicts happen between changes in source control, not between devices and their template.
-- **D** is wrong because zero-touch provisioning configures new devices automatically on first boot; it does not describe drift on existing ones.
-
-</details>
-
-### Item 12
-
-A company is starting a two-year move to IPv6. During the move, every router, server and workstation must reach both IPv4 and IPv6 resources natively, with no address translation and no tunnels. Which transition method fits?
-
-A. NAT64
-
-B. Tunneling IPv6 over IPv4
-
-C. APIPA
-
-D. Dual stack
-
-<details>
-<summary>Answer and explanation</summary>
-
-**Answer: D.** Running IPv4 and IPv6 at the same time on the company's own devices is dual stack, the usual migration approach. (Objective 1.8)
-
-- **A** is wrong because NAT64 translates between IPv6-only and IPv4-only hosts, and the company wants no translation.
-- **B** is wrong because tunneling carries IPv6 inside IPv4 across networks that cannot route IPv6, and the company wants no tunnels.
-- **C** is wrong because APIPA is IPv4 self-assignment when DHCP fails.
-
-</details>
+Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 questions, with a domain-by-domain breakdown: [take the free test](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
 
 ## Score yourself
 
-| Item | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 |
-|---|---|---|---|---|---|---|---|---|---|---|---|---|
-| Answer | B | D | A | C | A, D | C | B | D | A | C | B | D |
-| Objective | 1.1 | 1.2 | 1.3 | 1.4 | 1.4 | 1.5 | 1.6 | 1.7 | 1.7 | 1.7 | 1.8 | 1.8 |
+| Item | 1 | 2 | 3 | 4 |
+|---|---|---|---|---|
+| Answer | A | A, D | C | C |
+| Objective | 1.3 | 1.4 | 1.5 | 1.7 |
 
-- **11 to 12:** strong. Keep the port table and subnet method fresh with a few minutes of drills each day, since this domain carries close to a quarter of the exam.
-- **9 to 10:** list the objectives you missed. Ports and subnetting are the usual weak spots; reread [1.4 Ports protocols and traffic types](#14-ports-protocols-and-traffic-types) and [1.7 IPv4 addressing](#17-ipv4-addressing).
-- **8 or fewer:** spend two study sessions here. Write the port table and the CIDR table from memory until both are perfect, work ten subnets by hand with the five-step method, then reread [1.5 Media and transceivers](#15-media-and-transceivers) and [1.3 Cloud concepts](#13-cloud-concepts) before redoing the items.
+- **4:** strong. Keep the port table and subnet method fresh with a few minutes of drills each day, since this domain carries close to a quarter of the exam.
+- **3:** list the objectives you missed. Ports and subnetting are the usual weak spots; reread [1.4 Ports protocols and traffic types](#14-ports-protocols-and-traffic-types) and [1.7 IPv4 addressing](#17-ipv4-addressing).
+- **2 or fewer:** spend two study sessions here. Write the port table and the CIDR table from memory until both are perfect, work ten subnets by hand with the five-step method, then reread [1.5 Media and transceivers](#15-media-and-transceivers) and [1.3 Cloud concepts](#13-cloud-concepts) before redoing the items.
 
 ## Next step
 
@@ -698,4 +506,4 @@ D. Dual stack
 
 ---
 
-<!-- nav:bottom -->← Previous: [15-minute diagnostic](../diagnostic.md) | Next: [Domain 2: Network Implementation](2-network-implementation.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->← Previous: [5-minute diagnostic](../diagnostic.md) | Next: [Domain 2: Network Implementation](2-network-implementation.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
