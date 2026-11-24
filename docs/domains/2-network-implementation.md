@@ -489,7 +489,7 @@ D. Whether the server room uses a clean agent fire suppression system
 
 1. Redo any item you missed without opening the explanation, and write the trap you fell for in one line.
 2. Run `route print` on Windows (or `ip route` on Linux), find the default route and the most specific route for your own subnet, and explain which one a packet to a local printer and a packet to a website would use. If you have a free network simulator, build two VLANs with a trunk and route between them with an SVI.
-3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practise pacing across the whole exam.
+3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practice pacing across the whole exam.
 
 ---
 

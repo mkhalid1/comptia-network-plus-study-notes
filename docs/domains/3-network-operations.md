@@ -500,7 +500,7 @@ D. SSH access on the router's LAN interface
 
 1. Redo any item you missed without opening the explanation, and write the trap you fell for in one line.
 2. On your own machine, run `nslookup -type=mx` and `nslookup -type=txt` against a domain you use, then `nslookup` with an IP address to see a PTR lookup. Write down which answers are authoritative and which are not.
-3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practise pacing across the whole exam.
+3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practice pacing across the whole exam.
 
 ---
 

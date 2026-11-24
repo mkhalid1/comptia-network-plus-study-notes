@@ -180,7 +180,7 @@ Every domain guide has the same parts: what the domain measures (objective by ob
 - **Read every explanation,** including for items you got right. Each one says why every wrong option is wrong.
 - **Do the maths on paper.** Subnetting is a skill, not a fact. Redo the worked examples until you can do them in under a minute.
 - **Keep a miss log.** For each miss, write what you confused and the word in the stem that should have stopped you. The [study plans](docs/study-plans.md) show how.
-- **Practise timed.** A timed run, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), teaches the pace.
+- **Practice timed.** A timed run, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), teaches the pace.
 - **Clone or fork it** to annotate your own copy. The structure also works as a GitBook space: see [SUMMARY.md](SUMMARY.md).
 
 ## About the practice items

@@ -415,7 +415,7 @@ D. The cables to the four APs are longer than 100 m
 
 ### Item 5
 
-A new fiber run between two buildings shows no link. Both switches have matching single-mode 10G optics, the cable is single-mode, and a visual fault locator shows light reaching the far end on both strands. The installer used straight-through patching on both patch panels, so each switch's transmit strand may be landing on the other switch's transmit port. What should the technician try FIRST?
+A new fiber run between two buildings shows no link. Both switches have matching single-mode 10G optics, the cable is single-mode, and a visual fault locator shows light reaching the far end on both strands. Both switch ports are enabled and the optics show no fault, but neither side detects any received signal. What should the technician try FIRST?
 
 A. Replace both optics with multimode optics
 
@@ -647,7 +647,7 @@ D. `show mac-address-table`
 
 1. Redo any item you missed without opening the explanation, and write the trap you fell for in one line.
 2. On your own computer, run `ipconfig /all` (or `ip addr` and `ip route` on Linux), then `ping` your gateway, `tracert` (or `traceroute`) to a public site, and `arp -a`. Explain every line of output, and say which methodology step each command would support.
-3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practise pacing across the whole exam.
+3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practice pacing across the whole exam.
 
 ---
 

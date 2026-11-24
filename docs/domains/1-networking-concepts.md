@@ -4,7 +4,7 @@
 
 **Weight:** 23% of the exam (CompTIA's figure), the second heaviest domain. By our estimate that is roughly 20 of up to 90 questions. **Objectives:** 1.1 to 1.8.
 
-This is the vocabulary and arithmetic of networking: the OSI model, what each appliance does, cloud networking, ports and protocols, cables and transceivers, topologies, IPv4 addressing and the newer ideas such as SDN, zero trust and IPv6. Most marks here are lost on details that feel easy until a scenario twists them: a port number off by one, the wrong fiber type for a distance, or a subnet boundary worked out in a hurry. Learn the tables cold and practise the subnet method until it is automatic.
+This is the vocabulary and arithmetic of networking: the OSI model, what each appliance does, cloud networking, ports and protocols, cables and transceivers, topologies, IPv4 addressing and the newer ideas such as SDN, zero trust and IPv6. Most marks here are lost on details that feel easy until a scenario twists them: a port number off by one, the wrong fiber type for a distance, or a subnet boundary worked out in a hurry. Learn the tables cold and practice the subnet method until it is automatic.
 
 ## What this domain measures
 
@@ -694,7 +694,7 @@ D. Dual stack
 
 1. Redo any item you missed without opening the explanation, and write the trap you fell for in one line.
 2. Run `ipconfig /all` on Windows (or `ip addr` on Linux), take your own address and prefix, and work out the network address, broadcast address and usable range by hand. Then check yourself with an online subnet calculator.
-3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practise pacing across the whole exam.
+3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practice pacing across the whole exam.
 
 ---
 

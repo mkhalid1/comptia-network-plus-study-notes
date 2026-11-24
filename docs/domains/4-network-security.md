@@ -465,7 +465,7 @@ D. Configure URL filtering on the switch
 
 1. Redo any item you missed without opening the explanation, and write the trap you fell for in one line.
 2. Run `arp -a` on your own computer and find your default gateway's entry. Note its MAC address, then check it again on another day: if it ever matches another host's MAC, you know what that means.
-3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practise pacing across the whole exam.
+3. Take a timed run with the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to practice pacing across the whole exam.
 
 ---
 
