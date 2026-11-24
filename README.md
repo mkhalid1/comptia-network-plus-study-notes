@@ -118,8 +118,6 @@ Every domain guide has the same parts: what the domain measures (objective by ob
   - [What PBQs are](docs/performance-based-questions.md#what-pbqs-are)
   - [A pacing plan for 90 minutes](docs/performance-based-questions.md#a-pacing-plan-for-90-minutes)
   - [How to approach a PBQ](docs/performance-based-questions.md#how-to-approach-a-pbq)
-  - [Practice task 1: complete the subnetting table](docs/performance-based-questions.md#practice-task-1-complete-the-subnetting-table)
-  - [Practice task 2: order the troubleshooting steps](docs/performance-based-questions.md#practice-task-2-order-the-troubleshooting-steps)
   - [Practice under time](docs/performance-based-questions.md#practice-under-time)
 - [How Network+ scoring works](docs/scoring.md)
   - [The scaled score](docs/scoring.md#the-scaled-score)

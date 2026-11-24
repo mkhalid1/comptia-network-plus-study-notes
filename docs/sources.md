@@ -30,7 +30,7 @@ The following are our advice, not CompTIA statements: the estimated number of qu
 
 ## Practice items
 
-All practice, PBQ-style and diagnostic items are original, written for these notes. None are taken from CompTIA's exams or materials or from any prep provider.
+All practice and diagnostic items are original, written for these notes. None are taken from CompTIA's exams or materials or from any prep provider.
 
 ## Not affiliated
 
