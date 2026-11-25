@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [Domain 4: Network Security](4-network-security.md) · Next: [Performance-based questions and pacing](../performance-based-questions.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../../README.md#contents) · Previous: [Domain 4: Network Security](4-network-security.md) · Next: [Performance-based questions and pacing](../performance-based-questions.md)
+<!-- /nav:top -->
 
 # Domain 5: Network Troubleshooting
 
@@ -449,4 +451,6 @@ Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 q
 
 ---
 
-<!-- nav:bottom -->← Previous: [Domain 4: Network Security](4-network-security.md) | Next: [Performance-based questions and pacing](../performance-based-questions.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Domain 4: Network Security](4-network-security.md) | Next: [Performance-based questions and pacing](../performance-based-questions.md) → | [Back to contents](../../README.md#contents)
+<!-- /nav:bottom -->

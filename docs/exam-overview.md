@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../README.md#contents) · Next: [5-minute diagnostic](diagnostic.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../README.md#contents) · Next: [5-minute diagnostic](diagnostic.md)
+<!-- /nav:top -->
 
 # The Network+ N10-009 exam explained
 
@@ -75,4 +77,6 @@ Reading teaches the content; timed practice teaches the pace. When you have work
 
 ---
 
-<!-- nav:bottom -->Next: [5-minute diagnostic](diagnostic.md) → | [Back to contents](../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+Next: [5-minute diagnostic](diagnostic.md) → | [Back to contents](../README.md#contents)
+<!-- /nav:bottom -->

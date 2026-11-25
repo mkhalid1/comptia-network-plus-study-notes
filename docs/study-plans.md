@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../README.md#contents) · Previous: [How Network+ scoring works](scoring.md) · Next: [Exam-day checklist](exam-day-checklist.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../README.md#contents) · Previous: [How Network+ scoring works](scoring.md) · Next: [Exam-day checklist](exam-day-checklist.md)
+<!-- /nav:top -->
 
 # Study plans: 7 days and 2 days
 
@@ -64,4 +66,6 @@ For when the exam is already booked and close.
 
 ---
 
-<!-- nav:bottom -->← Previous: [How Network+ scoring works](scoring.md) | Next: [Exam-day checklist](exam-day-checklist.md) → | [Back to contents](../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [How Network+ scoring works](scoring.md) | Next: [Exam-day checklist](exam-day-checklist.md) → | [Back to contents](../README.md#contents)
+<!-- /nav:bottom -->

@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../README.md#contents) · Previous: [Performance-based questions and pacing](performance-based-questions.md) · Next: [Study plans: 7 days and 2 days](study-plans.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../README.md#contents) · Previous: [Performance-based questions and pacing](performance-based-questions.md) · Next: [Study plans: 7 days and 2 days](study-plans.md)
+<!-- /nav:top -->
 
 # How Network+ scoring works
 
@@ -46,4 +48,6 @@ Take a day off, then rebuild your plan around the objectives on your score repor
 
 ---
 
-<!-- nav:bottom -->← Previous: [Performance-based questions and pacing](performance-based-questions.md) | Next: [Study plans: 7 days and 2 days](study-plans.md) → | [Back to contents](../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Performance-based questions and pacing](performance-based-questions.md) | Next: [Study plans: 7 days and 2 days](study-plans.md) → | [Back to contents](../README.md#contents)
+<!-- /nav:bottom -->

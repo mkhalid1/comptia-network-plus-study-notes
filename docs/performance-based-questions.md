@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../README.md#contents) · Previous: [Domain 5: Network Troubleshooting](domains/5-network-troubleshooting.md) · Next: [How Network+ scoring works](scoring.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../README.md#contents) · Previous: [Domain 5: Network Troubleshooting](domains/5-network-troubleshooting.md) · Next: [How Network+ scoring works](scoring.md)
+<!-- /nav:top -->
 
 # Performance-based questions and pacing
 
@@ -48,4 +50,6 @@ PBQ skill improves fastest with timed practice. Work through the domain items in
 
 ---
 
-<!-- nav:bottom -->← Previous: [Domain 5: Network Troubleshooting](domains/5-network-troubleshooting.md) | Next: [How Network+ scoring works](scoring.md) → | [Back to contents](../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Domain 5: Network Troubleshooting](domains/5-network-troubleshooting.md) | Next: [How Network+ scoring works](scoring.md) → | [Back to contents](../README.md#contents)
+<!-- /nav:bottom -->

@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [5-minute diagnostic](../diagnostic.md) · Next: [Domain 2: Network Implementation](2-network-implementation.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../../README.md#contents) · Previous: [5-minute diagnostic](../diagnostic.md) · Next: [Domain 2: Network Implementation](2-network-implementation.md)
+<!-- /nav:top -->
 
 # Domain 1: Networking Concepts
 
@@ -506,4 +508,6 @@ Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 q
 
 ---
 
-<!-- nav:bottom -->← Previous: [5-minute diagnostic](../diagnostic.md) | Next: [Domain 2: Network Implementation](2-network-implementation.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [5-minute diagnostic](../diagnostic.md) | Next: [Domain 2: Network Implementation](2-network-implementation.md) → | [Back to contents](../../README.md#contents)
+<!-- /nav:bottom -->

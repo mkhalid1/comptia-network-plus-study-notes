@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [Domain 1: Networking Concepts](1-networking-concepts.md) · Next: [Domain 3: Network Operations](3-network-operations.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../../README.md#contents) · Previous: [Domain 1: Networking Concepts](1-networking-concepts.md) · Next: [Domain 3: Network Operations](3-network-operations.md)
+<!-- /nav:top -->
 
 # Domain 2: Network Implementation
 
@@ -355,4 +357,6 @@ Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 q
 
 ---
 
-<!-- nav:bottom -->← Previous: [Domain 1: Networking Concepts](1-networking-concepts.md) | Next: [Domain 3: Network Operations](3-network-operations.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Domain 1: Networking Concepts](1-networking-concepts.md) | Next: [Domain 3: Network Operations](3-network-operations.md) → | [Back to contents](../../README.md#contents)
+<!-- /nav:bottom -->

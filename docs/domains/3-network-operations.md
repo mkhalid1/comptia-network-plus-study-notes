@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [Domain 2: Network Implementation](2-network-implementation.md) · Next: [Domain 4: Network Security](4-network-security.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../../README.md#contents) · Previous: [Domain 2: Network Implementation](2-network-implementation.md) · Next: [Domain 4: Network Security](4-network-security.md)
+<!-- /nav:top -->
 
 # Domain 3: Network Operations
 
@@ -354,4 +356,6 @@ Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 q
 
 ---
 
-<!-- nav:bottom -->← Previous: [Domain 2: Network Implementation](2-network-implementation.md) | Next: [Domain 4: Network Security](4-network-security.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Domain 2: Network Implementation](2-network-implementation.md) | Next: [Domain 4: Network Security](4-network-security.md) → | [Back to contents](../../README.md#contents)
+<!-- /nav:bottom -->

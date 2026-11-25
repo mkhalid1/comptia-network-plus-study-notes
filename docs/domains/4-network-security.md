@@ -1,4 +1,6 @@
-<!-- nav:top -->[Contents](../../README.md#contents) · Previous: [Domain 3: Network Operations](3-network-operations.md) · Next: [Domain 5: Network Troubleshooting](5-network-troubleshooting.md)<!-- /nav:top -->
+<!-- nav:top -->
+[Contents](../../README.md#contents) · Previous: [Domain 3: Network Operations](3-network-operations.md) · Next: [Domain 5: Network Troubleshooting](5-network-troubleshooting.md)
+<!-- /nav:top -->
 
 # Domain 4: Network Security
 
@@ -333,4 +335,6 @@ Want more? The free timed Network+ (N10-009) practice test on PrepClubs has 25 q
 
 ---
 
-<!-- nav:bottom -->← Previous: [Domain 3: Network Operations](3-network-operations.md) | Next: [Domain 5: Network Troubleshooting](5-network-troubleshooting.md) → | [Back to contents](../../README.md#contents)<!-- /nav:bottom -->
+<!-- nav:bottom -->
+← Previous: [Domain 3: Network Operations](3-network-operations.md) | Next: [Domain 5: Network Troubleshooting](5-network-troubleshooting.md) → | [Back to contents](../../README.md#contents)
+<!-- /nav:bottom -->
