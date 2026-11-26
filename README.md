@@ -2,7 +2,7 @@
 
 A free, complete study guide for the CompTIA Network+ N10-009 exam. For each of the five official domains you get a plain-English explanation of every objective, the tables you need cold (OSI layers, ports and protocols, cabling, Wi-Fi standards, troubleshooting tools), subnetting worked step by step, how the questions look, a method, the traps that cost points, and original practice items with full explanations: 20 across the domains, plus a 5-item diagnostic. Every exam fact comes from CompTIA's own pages and the official objectives document, each one [cited](docs/sources.md).
 
-Want to see where you stand first? Take the [free timed Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), or the shorter [5-minute diagnostic](docs/diagnostic.md) in this repo.
+Want to see where you stand first? Take the [free timed Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus), or the shorter [5-minute diagnostic](docs/diagnostic.md) in this repo.
 
 ## Start here
 
@@ -178,7 +178,7 @@ Every domain guide has the same parts: what the domain measures (objective by ob
 - **Read every explanation,** including for items you got right. Each one says why every wrong option is wrong.
 - **Do the maths on paper.** Subnetting is a skill, not a fact. Redo the worked examples until you can do them in under a minute.
 - **Keep a miss log.** For each miss, write what you confused and the word in the stem that should have stopped you. The [study plans](docs/study-plans.md) show how.
-- **Practice timed.** A timed run, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), teaches the pace.
+- **Practice timed.** A timed run, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus), teaches the pace.
 - **Clone or fork it** to annotate your own copy. The structure also works as a GitBook space: see [SUMMARY.md](SUMMARY.md).
 
 ## About the practice items

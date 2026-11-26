@@ -76,7 +76,7 @@ You can retake it. There is no waiting period between your first and second atte
 
 ## Where can I practice for free?
 
-Start with the [diagnostic](diagnostic.md) and the practice items on each domain page in this repo. For a timed run in the real format, take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus).
+Start with the [diagnostic](diagnostic.md) and the practice items on each domain page in this repo. For a timed run in the real format, take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus).
 
 ---
 

@@ -18,7 +18,7 @@ Expect 1.5 to 3 hours a day.
 | 2 | Domain 1 (23%) | Read [Networking Concepts](domains/1-networking-concepts.md) in full. Do all 4 items. Write the OSI layers and the port table from memory, then do ten subnetting problems on paper. |
 | 3 | Domain 5 (24%) | Read [Network Troubleshooting](domains/5-network-troubleshooting.md). Do all 4 items. Write the seven troubleshooting steps from memory, and for each command-line tool note one problem it helps you find. |
 | 4 | Domains 2 and 3 (20% and 19%) | Read [Network Implementation](domains/2-network-implementation.md) and [Network Operations](domains/3-network-operations.md). Do both item sets. Make flash cards for routing protocols, wireless standards, DNS record types and RPO vs RTO. |
-| 5 | Domain 4 (14%) and first timed run | Read [Network Security](domains/4-network-security.md) and do its items. Then take a full timed practice test, such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus). Score it by domain. |
+| 5 | Domain 4 (14%) and first timed run | Read [Network Security](domains/4-network-security.md) and do its items. Then take a full timed practice test, such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus). Score it by domain. |
 | 6 | Fix the weakest heavy domain | Go back to the weakest domain from day 5. Reread its "Traps that cost points" and redo its items without the answers. Read [performance-based questions and pacing](performance-based-questions.md). |
 | 7 | Second timed run and rest | Take a second timed test in the morning. Compare domain scores with day 5. Read the [exam-day checklist](exam-day-checklist.md). Stop studying by early evening. |
 
@@ -44,7 +44,7 @@ For when the exam is already booked and close.
 | 2 | 40 min | Read "Key concepts explained" in [Domain 5](domains/5-network-troubleshooting.md), the heaviest domain, focusing on the troubleshooting method and the command-line tools. |
 | 3 | 30 min | Subnetting drill: twenty network ID and broadcast problems from /24 to /30, timed. |
 | 4 | 45 min | Read "Traps that cost points" on all five domain pages, then do the practice items for your two weakest domains. Read every explanation. |
-| 5 | 60 to 90 min | Take a full timed practice test, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus). |
+| 5 | 60 to 90 min | Take a full timed practice test, such as the [free one on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus). |
 | 6 | 30 min | Review every miss with the three questions above. |
 
 ### Day 2: sit the exam

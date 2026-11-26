@@ -46,7 +46,7 @@ On average across the exam, you have about one minute per question. Short recall
 
 ## Practice under time
 
-PBQ skill improves fastest with timed practice. Work through the domain items in this repo, then take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) and check your pace against the plan above.
+PBQ skill improves fastest with timed practice. Work through the domain items in this repo, then take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus) and check your pace against the plan above.
 
 ---
 

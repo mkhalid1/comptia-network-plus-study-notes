@@ -35,7 +35,7 @@ This is our guidance, since CompTIA publishes no conversion from practice scores
 
 Subnetting deserves its own check. If you cannot work out a network ID and broadcast address for any prefix from /24 to /30 in under a minute, practice that until you can, because it is tested in Domain 1 and comes back in Domain 5 as "incorrect subnet mask" problems.
 
-Use the score tables at the end of each domain page to track this, and a full timed run such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) to check pace.
+Use the score tables at the end of each domain page to track this, and a full timed run such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus) to check pace.
 
 ## If you do not pass
 

@@ -8,7 +8,7 @@ Five original items, one from each N10-009 domain, to show you where to start. S
 
 These items are original, written for these notes. They are not taken from CompTIA's exam or any prep provider. They are different from the practice items on the domain pages, so you can still use those afterwards.
 
-If you would rather start with a full timed run in the real format, take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus) instead, then come back here.
+If you would rather start with a full timed run in the real format, take the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus) instead, then come back here.
 
 ## Part A: Domain 1, Networking Concepts
 

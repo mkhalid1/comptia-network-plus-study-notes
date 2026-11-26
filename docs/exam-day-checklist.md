@@ -49,7 +49,7 @@ Source: [CompTIA candidate testing policies](https://www.comptia.org/en/resource
 
 ## Last practice before the real one
 
-Two or three days before the exam, do one final timed run, such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=study-notes&utm_content=network-plus), so that the pace feels familiar. Do not take a full test the night before.
+Two or three days before the exam, do one final timed run, such as the [free Network+ (N10-009) practice test on PrepClubs](https://prepclubs.com/free-practice-tests/network-plus?utm_source=github&utm_medium=referral&utm_campaign=fzshat&utm_content=network-plus), so that the pace feels familiar. Do not take a full test the night before.
 
 ---
 
